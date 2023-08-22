@@ -1,2 +1,3 @@
 # Shell-practice-scripts
-Shell Practice scripts
+
+This repo contains the Practice Shell scripts.
