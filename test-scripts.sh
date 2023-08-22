@@ -5,6 +5,8 @@
 read -p "Enter your name: " name
 echo "Hello $name ! nice to meet you.."
 
+-----------------------------------------------------------------
+
 # Conditional statments 
 
 num=10
@@ -16,6 +18,8 @@ elif [ $num -eq 10 ]; then
 else
     echo"Number is less than 10"
 fi
+
+--------------------------------------------------------------------
 
 # Case statements
 
@@ -48,6 +52,8 @@ case $color in
   *) echo "This color is not available. Please choose a different one.";; 
 esac
 
+-------------------------------------------------------------------
+
 # For loop statment example
 
 for i in {1..20}; do
@@ -72,6 +78,8 @@ unset fruits[1]
 for fruit in "${fruits[@]}";do
     echo "Fruits: $fruit"
 done
+
+--------------------------------------------------------------------
 
 # While loop statement example
 
