@@ -59,4 +59,30 @@ for i in {1..20}; do
     echo "number: $i"
 done
 
+fruits=("apple" "banana" "pineapple" "cherry")
 
+for fruit in "${fruits[@]}";do
+    echo "Fruit: $fruit"
+done
+
+# Whlile statement example
+
+counter=1 
+
+while [$counter -le 5]; do
+    echo "Count: $counter"
+    counter=$((counter+1))
+done
+
+echo "loop finished"
+
+# until statement example 
+
+counter=1 
+
+until [$counter -ge 5]; do
+    echo "Count: $counter"
+    counter=$((counter+1))
+done    
+
+echo "Until loop finished"
