@@ -7,11 +7,11 @@ echo "Hello $name ! nice to meet you.."
 
 # Conditional statments 
 
-num = 10
+num=10
 
-if [$num -gt 10]; then
+if [ $num -gt 10 ]; then
     echo "Number is greater than 10"
-elif [$num -eq 10]; then
+elif [ $num -eq 10 ]; then
     echo "Number is equal to 10"
 else
     echo"Number is less than 10"
@@ -21,7 +21,7 @@ fi
 
 # Example 1
 
-fruit ="apple"
+fruit="apple"
 
 case $fruit in
     "apple")
@@ -43,7 +43,7 @@ echo "2 - Red"
 echo "3 - Yellow"
 echo "4 - Green"
 echo "5 - Orange"
-read color;
+read -p "Enter the Color: " color
 case $color in
   1) echo "Blue is a primary color.";;
   2) echo "Red is a primary color.";;
@@ -53,7 +53,7 @@ case $color in
   *) echo "This color is not available. Please choose a different one.";; 
 esac
 
-# loop statments
+# For loop statment example
 
 for i in {1..20}; do
     echo "number: $i"
@@ -65,11 +65,11 @@ for fruit in "${fruits[@]}";do
     echo "Fruit: $fruit"
 done
 
-# Whlile statement example
+# While loop statement example
 
 counter=1 
 
-while [$counter -le 5]; do
+while [ $counter -le 5 ]; do
     echo "Count: $counter"
     counter=$((counter+1))
 done
@@ -78,11 +78,11 @@ echo "loop finished"
 
 # until statement example 
 
-counter=1 
+counter_var=1 
 
-until [$counter -ge 5]; do
-    echo "Count: $counter"
-    counter=$((counter+1))
+until [ $counter_var -ge 5 ]; do
+    echo "Count: " $counter_var
+    counter_var=$((counter_var+1))
 done    
 
 echo "Until loop finished"
