@@ -24,15 +24,10 @@ fi
 fruit="apple"
 
 case $fruit in
-    "apple")
-    echo "It's an apple"
-    ;;
-    "banana")
-    echo "It's a banana"
-    ;;
+    "apple")  echo "It's an apple"  ;;
+    "banana")  echo "It's a banana" ;;
     *)
-    echo "unknown fruit"
-    ;;
+    echo "unknown fruit" ;;
 esac
 
 # Example 2 using user input
@@ -59,10 +54,23 @@ for i in {1..20}; do
     echo "number: $i"
 done
 
+# Example 2 
+
 fruits=("apple" "banana" "pineapple" "cherry")
 
 for fruit in "${fruits[@]}";do
     echo "Fruit: $fruit"
+done
+
+# Example 3
+
+fruits=("apple" "banana")
+fruits+=("pineapple" "cherry")
+
+unset fruits[1]
+
+for fruit in "${fruits[@]}";do
+    echo "Fruits: $fruit"
 done
 
 # While loop statement example
