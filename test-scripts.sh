@@ -7,7 +7,7 @@ echo "Hello $name ! nice to meet you.."
 
 -----------------------------------------------------------------
 
-# Conditional statments 
+# Conditional statements 
 
 num=10
 
