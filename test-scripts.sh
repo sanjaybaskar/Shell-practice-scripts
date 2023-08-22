@@ -68,6 +68,10 @@ for fruit in "${fruits[@]}";do
     echo "Fruit: $fruit"
 done
 
+length=${#fruits[@]}
+
+echo "Length of the Fruits: $length"
+
 # Example 3
 
 fruits=("apple" "banana")
