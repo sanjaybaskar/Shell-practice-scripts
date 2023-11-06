@@ -12,3 +12,15 @@ grep "$word" "$filename"
 else
 echo "The file $filename does not exist."
 fi
+
+# Alternate script
+
+read -p "Enter the filename: " filename2
+
+if [[ -f $filename2]]
+then 
+echo "The file $filename2 exists"
+else
+echo "File doesn't exists"
+fi
+
