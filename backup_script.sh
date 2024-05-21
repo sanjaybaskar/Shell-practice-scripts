@@ -25,3 +25,12 @@ if [ $? -eq 0 ]; then
 else
     echo "Backup failed"
 fi
+
+
+
+# Schedule the cron job
+
+crontab -e
+
+***** /path/to/backup_script.sh
+

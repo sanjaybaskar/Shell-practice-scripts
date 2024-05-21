@@ -106,3 +106,31 @@ until [ $counter_var -ge 5 ]; do
 done    
 
 echo "Until loop finished"
+
+
+-------------------------------------------------------------------------------
+
+# To check the system uptime
+
+#! /bin/bash
+
+# Print the system uptime
+
+uptime -p
+
+---------------------------------------------------------------------------------
+
+# To check the listening ports 
+
+#! /bin/bash
+
+netstat -tupln | grep LISTEN
+
+-------------------------------------------------------------------------------
+
+# To monitor system Process and memory usage
+
+#! /bin/bash
+
+ps aux --sort=-%mem | head -n 10
+

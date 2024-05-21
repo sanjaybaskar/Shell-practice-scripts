@@ -21,6 +21,6 @@ if [[ -f $filename2]]
 then 
 echo "The file $filename2 exists"
 else
-echo "File doesn't exists"
+echo "File doesn't exists"   
 fi
 
