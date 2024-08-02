@@ -20,3 +20,5 @@ mysqldump -u root -p $DB_NAME > $BACKUP_DIR/$DB_NAME-$DATE.sql
 
 echo "Database backup completed"
 
+
+echo "this uis" > sample.txt

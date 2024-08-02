@@ -36,19 +36,20 @@ apply
 #function software to install taking input from user.............
 
 software () {
-read -p "Type which software you want to install: " soft
+    read -p "Type which software you want to install: " soft
 
-yum -y install ${soft}
+    sudo apt-get install -y ${soft}
 
-if [ $? = '0' ] then
-echo  "package ${soft} is sucessfully installed"
-else
-echo "package ${soft} is NOT sucessfully installed"
-fi
+    if [ $? -eq 0 ]; then
+        echo "Package ${soft} is successfully installed"
+    else
+        echo "Package ${soft} is NOT successfully installed"
+    fi
 }
 
-#calling function
+# Calling function
 software
+
 
 ---------------------------------------------------------------------------
 

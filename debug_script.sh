@@ -21,3 +21,5 @@ echo "Debug: Result is $result"
 ls /nonexistent_directory
 
 echo "Debug: Script completed."
+
+set +x

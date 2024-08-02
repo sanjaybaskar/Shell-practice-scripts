@@ -16,7 +16,7 @@ if [ $num -gt 10 ]; then
 elif [ $num -eq 10 ]; then
     echo "Number is equal to 10"
 else
-    echo"Number is less than 10"
+    echo "Number is less than 10"
 fi
 
 --------------------------------------------------------------------
@@ -124,7 +124,7 @@ uptime -p
 
 #! /bin/bash
 
-netstat -tupln | grep LISTEN
+netstat -tupln | grep LISTEN 
 
 -------------------------------------------------------------------------------
 
@@ -134,3 +134,11 @@ netstat -tupln | grep LISTEN
 
 ps aux --sort=-%mem | head -n 10
 
+----------------------------------------------------------
+
+Shell script parameters
+
+$$ - PID 
+$# - Counts arguments
+$? - Last return code 
+$* - all the arguments 

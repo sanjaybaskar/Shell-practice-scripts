@@ -11,7 +11,7 @@ source_dir="/path/to/source/directory"
 backup_dir="/path/to/backup/directory"
 
 # Backup filename with date
-backup_filename="backup_$(date +%Y%m%d%H%M%S).tar.gz"
+backup_filename="backup_$(date +%Y%m%d%H%M%S).tar.gz" 
 
 # Create the backup directory if it doesn't exist
 mkdir -p "$backup_dir"
